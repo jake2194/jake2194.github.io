@@ -33,3 +33,11 @@ ul{
 li{
   list-style-type: lower-roman;
 }
+
+.customList {
+  color:purple
+}
+
+#maintitle {
+  font-family: 'Permanent Marker', cursive;
+}
