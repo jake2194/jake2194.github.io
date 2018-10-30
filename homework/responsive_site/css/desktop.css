@@ -1,0 +1,47 @@
+/* Nav links */
+nav li  {
+   display: inline;
+   text-align: left;
+}
+/* Create two equal columns that align next to each other */
+.column2 {
+    display: inline-block;
+    vertical-align: top;
+    width: 47%;
+    background: #f1f1f1;
+    box-sizing: content-box;
+    margin: 1%;
+}
+/* Create three equal columns that align next to each other */
+.column3 {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    box-sizing: content-box;
+    margin: 1.4%;
+}
+.columnLeft {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    box-sizing: content-box;
+    margin: 1.4%;
+}
+.columnRight {
+    display: inline-block;
+    vertical-align: top;
+    width: 60%;
+    box-sizing: content-box;
+    margin: 1.4%;
+}
+.gallery {
+  text-align: center;
+}
+.gallery img {
+  width:200px;
+  margin: 10px;
+  border: 2px solid white;
+}
+.gallery img:hover {
+  border: 2px solid orange;
+}
