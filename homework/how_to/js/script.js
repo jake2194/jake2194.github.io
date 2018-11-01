@@ -1,7 +1,9 @@
 //variable to track the number of totalsteps
-var totalsteps = 3;
+var totalsteps = 5;
 
 //track which step should be displayed
+
+
 
 var currentstep = 0;
 //store the html of each slide
@@ -67,6 +69,22 @@ if(currentstep == 1) {
 }
 });
 
+
+//not done yet
+
+$('.stepimg').on('click', function(){
+  $(this).css('width', '100%');
+});
+
+$('h1').on('mouseover' , function(){
+  $(this).css('color','red');
+});
+$('h1').on('mouseleave' , function(){
+  $(this).css('color','green');
+});
+
 $('#finish').on('click', function(){
-$('.steps li, .end, .controls, #prev').hide();
+$('.steps li, .controls, #prev').hide();
+$('.end').show();
+
 });
