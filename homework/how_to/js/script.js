@@ -88,3 +88,7 @@ $('.steps li, .controls, #prev').hide();
 $('.end').show();
 
 });
+
+$('.end').on('click' , function(){
+  location.reload();
+});
