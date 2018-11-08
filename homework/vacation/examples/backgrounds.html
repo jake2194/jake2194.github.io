@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title> Visit Santa Barbara </title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="pagePiling.js plugin by Alvaro Trigo." />
+	<meta name="keywords"  content="pile,piling,piling.js,stack,pages,scrolling,stacking,touch,fullpile,scroll,plugin,jquery" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" type="text/css" href="../jquery.pagepiling.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+	<script type="text/javascript" src="../jquery.pagepiling.min.js"></script>
+	<script type="text/javascript">
+		var deleteLog = false;
+
+		$(document).ready(function() {
+	    	$('#pagepiling').pagepiling({
+	    		menu: '#menu',
+	    		anchors: ['page1', 'page2', 'page3', 'page4','page5'],
+	    		navigation: {
+		            'textColor': '#f2f2f2',
+		            'bulletsColor': '#ccc',
+		            'position': 'right',
+		            'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Page 4','Page 5']
+		        }
+			});
+	    });
+    </script>
+
+    <style>
+    /* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	#section1,
+	#section2,
+	#section3,
+	#section4,
+	#section5{
+		background-size: cover;
+	}
+
+	/* Defining each section background and styles
+	* --------------------------------------- */
+	#section1{
+		background-image: url(imgs/Bacara.jpg);
+	}
+	#section2{
+		background-image: url(imgs/statestreet.jpg);
+		padding: 6% 0 0 0;
+	}
+	#section3{
+		background-image: url(imgs/funkzone2.jpg);
+		padding: 6% 0 0 0;
+	}
+	#section4{
+		background-image: url(imgs/sbbeach.jpg);
+		padding: 6% 0 0 0;
+	}
+	#section5{
+		background-image: url(imgs/sbclub.jpg);
+		padding: 6% 0 0 0;
+	}
+	#section3 h1{
+		color: #000;
+	}
+
+
+
+	#section1 h1{
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		top: 30px;
+		color: #fff;
+	}
+
+	#section2 .intro{
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		top: 30px;
+	}
+	#section2 h1,
+	#section2 p{
+		text-shadow: 1px 5px 20px #000;
+	}
+
+	#section3 h1,
+	#section3 p{
+		text-shadow: 1px 5px 20px #000;
+		color: #fff;
+	}
+	#section4 h1,
+	#section4 p{
+		text-shadow: 1px 5px 20px #000;
+		color: #fff;
+	}
+	#section5 h1,
+	#section5 p{
+		text-shadow: 1px 5px 20px #000;
+		color: #fff;
+	}
+
+	#infoMenu li a{
+			color: #fff;
+	}
+    </style>
+
+</head>
+<body>
+
+	<ul id="menu">
+		<li data-menuanchor="page1" class="active"><a href="#page1">Bacara</a></li>
+		<li data-menuanchor="page2"><a href="#page2">State St</a></li>
+		<li data-menuanchor="page3"><a href="#page3">Funk Zone</a></li>
+		<li data-menuanchor="page4"><a href="#page4">Beach</a></li>
+		<li data-menuanchor="page5"><a href="#page5">Clubs</a></li>
+	</ul>
+
+	<div id="pagepiling">
+	    <div class="section" id="section1">
+	    	<h1>Visit Santa Barbara!</h1>
+				<p> Santa Barbara is one of the most fun and beautiful places you can visit in California. If you want to travel there, you can choose from many different nice hotels. I recommend the Ritz-Carlton Bacara resort. Also, there are four places you should definitely check out.  </p>
+	    </div>
+	    <div class="section" id="section2">
+	    	<div class="intro">
+	    		<h1>State Street </h1>
+	    		<p>State street is a great place to visit if you want to go shopping, have a drink, or get a bite to eat. There are many great stores and bars. There is also Habit Burger, which you have to go to while you're in Santa Barbara. </p>
+	    	</div>
+	    </div>
+	    <div class="section" id="section3">
+	    	<div class="intro">
+	    		<h1>The Funk Zone</h1>
+	    		<p>The Funk Zone is a place in Santa Barbara where there is a bunch of bars and wine tasting rooms. This is a fun place to get a drink. Figueroa Mountain Brewing Co. is one of the local brewerys that you will definitely want to go to if you like beer. </p>
+	    	</div>
+	    </div>
+			<div class="section" id="section4">
+	    	<div class="intro">
+	    		<h1>The Beach</h1>
+	    		<p>Be sure to make a trip to the beach! There are some really nice beaches in Santa Barbara. They have Kayak rentals and paddle boards. There are always people playing volleyball. You can also just lay down, relax, and enjoy the great weather that Santa Barbara has to offer!</p>
+	    	</div>
+	    </div>
+			<div class="section" id="section5">
+	    	<div class="intro">
+	    		<h1>Nightlife</h1>
+	    		<p> At night, there are some cool clubs to check out. There are two main clubs called Eos Lounge and Wildcat. Eos plays hip hop music and electronic and usually has two DJ's both inside and outside. Wildcat plays hip hop music and has one DJ but also has an outdoor area with pool tables and a second bar. If you visit Santa Barbara, be ready for a fun time!</p>
+	    	</div>
+	    </div>
+	</div>
+
+</body>
+</html>
